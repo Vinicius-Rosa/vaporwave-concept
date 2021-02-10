@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaporwave Concept</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <div class="overlay1"></div>
+    <div class="overlay2"></div>
+    <div class="overlay3"></div>
+
+    <div class="new">
+        <div class="text">
+            <h1>Awesome!</h1>
+            <span>Here goes the website</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <div class="box" id="box1">
+                <span class="glitch" data-text="Building">Building</span>
+            </div>
+            <div class="box" id="box2">
+                <span class="glitch" data-text="Cool">Cool</span>
+            </div>
+            <div class="box" id="box3">
+                <span class="glitch" data-text="Experiences">Experiences</span>
+            </div>
+        </div>
+
+        <div class="cloud-scene" id="cloud-scene"></div>
+        <div class="medusa-container">
+            <img class="eye" src="assets/eye.svg" alt="">
+            <img id="medusa1" class="medusa" src="assets/medusa.png" alt="">
+            <img id="medusa2" class="medusa medusa-pink" src="assets/medusa-pink.png" alt="">
+            <img id="medusa3" class="medusa medusa-blue" src="assets/medusa-blue.png" alt="">
+        </div>
+
+        <div class="right">
+            <div class="box-right" id="go">
+                <button type="button" class="glitch" data-text="Go!" onclick="go()">Go!</button>
+            </div>
+        </div>
+
+        <video id="background" poster="assets/bg-first.png" autoplay muted loop>
+            <source src="assets/bg.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="js/animations.js"></script>
+
+
+    <script src="utils/three.min.js"></script>
+    <script src="utils/GLTFLoader.js"></script>
+    <script src="js/3dscenes.js"></script>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
