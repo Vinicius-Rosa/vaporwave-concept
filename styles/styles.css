@@ -407,7 +407,7 @@ body {
   margin-top: -70px;
   filter: drop-shadow(15px 8px 10px rgba(0, 0, 0, .8));
 
-  animation: eye-float 2.2s ease-in-out alternate-reverse infinite;
+  /* animation: eye-float 2.2s ease-in-out alternate-reverse infinite; */
   z-index: 3;
 }
 
@@ -433,18 +433,6 @@ body {
   z-index: 1;
 }
 
-.medusa:hover{
-  animation: float 2s ease-in-out alternate-reverse infinite;
-}
-
-.medusa:hover .medusa-pink{
-  animation: float 2.2s ease-in-out alternate-reverse infinite;
-}
-
-.medusa:hover .medusa-blue{
-  animation: float 2.4s ease-in-out alternate-reverse infinite;
-}
-
 @keyframes float {
   from{ 
     transform: translateY(-10px) translateX(-5px);
@@ -465,11 +453,13 @@ body {
 
 @keyframes floatcommon {
   from{ 
-    transform: translateY(-10px);
+    top: 12%;
+    /* transform: translateY(-10px); */
   }
 
   to{ 
-    transform: translateY(10px);
+    top:  calc(12% + 20px);
+    /* transform: translateY(10px); */
   }
 }
 

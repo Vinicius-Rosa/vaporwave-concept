@@ -1,3 +1,23 @@
+(function () {
+    document.addEventListener("mousemove", parallax);
+
+    const elem = document.querySelectorAll(".medusa-container img");
+    const clouds = document.querySelectorAll("#cloud-scene");
+
+    function parallax(e) {
+
+        elem.forEach(function (move) {
+            let movingValue = move.getAttribute("data-value");
+            let x = e.clientX * movingValue / 250;
+            let y = e.clientY * movingValue / 250;
+
+            move.style.transform = `translateX(${x}px) translateY(${y}px)`;
+            // clouds.style.margin = `${y} ${x}`;
+        })
+    }
+
+})();
+
 function go() {
     const tl = new TimelineMax();
 

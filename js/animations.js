@@ -27,21 +27,21 @@ TweenMax.from("#go button", 1, {
 // MEDUSA ANIMATION
 TweenMax.from("#medusa1", 1, {
     delay: 0.2,
-    bottom: '-15%',
+    transform: 'translateY(30%)',
     opacity: 0,
     ease: Expo.easeInOut
 });
 
 TweenMax.from("#medusa2", 1, {
     delay: 0.3,
-    bottom: '-15%',
+    transform: 'translateY(30%)',
     opacity: 0,
     ease: Expo.easeInOut
 });
 
 TweenMax.from("#medusa3", 1, {
     delay: 0.4,
-    bottom: '-15%',
+    transform: 'translateY(30%)',
     opacity: 0,
     ease: Expo.easeInOut
 });
